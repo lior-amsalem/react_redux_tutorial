@@ -14,7 +14,7 @@ app.use(require('webpack-dev-middleware')(compiler, {
 }));
 
 app.get('*', function(req, res) {
-	res.sendFile(path.join(__dirname, 'examples/index.html'));
+	res.sendFile(path.join(__dirname, 'demo/index.html'));
 });
 
 app.listen(3334, 'localhost', function(error) {

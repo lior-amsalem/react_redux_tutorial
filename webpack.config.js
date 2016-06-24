@@ -7,10 +7,17 @@ module.exports = {
     devtool: 'cheap-module-eval-source-map',
     entry: {
         index: [
-            './examples/basic',
+            './src/router',
             hotMiddlewareEntry,
             'react',
-            'react-dom'
+            'react-dom',
+            'react-router',
+            'immutable',
+            'es6-promise',
+            'isomorphic-fetch',
+            'redux',
+            'react-redux',
+            'redux-thunk'
         ]
     },
     output: {
@@ -44,7 +51,13 @@ module.exports = {
     plugins: [
         new webpack.ProvidePlugin({
             React: 'react',
-            ReactDOM: 'react-dom'
+            ReactDOM: 'react-dom',
+            ReactRouter: 'react-router',
+            Redux: 'redux',
+            ReactRedux: 'react-redux',
+            ReduxThunk: 'redux-thunk',
+            Immutable: 'immutable',
+            fetch: 'isomorphic-fetch'
         }),
         new webpack.HotModuleReplacementPlugin(),
     ]
