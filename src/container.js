@@ -10,12 +10,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        onAdd: (name, family_name, age) => {
-            dispatch(add(name, family_name, age));
-        },
-        onRemove: (index) => {
-            dispatch(remove(index));
-        }
+
     }
 }
 

@@ -15,35 +15,13 @@ class List extends React.Component {
      * - It should be pure function without any interaction with the DOM or the browser.
      */
     render() {
-        const {
-            list,
-            onRemove
-        } = this.props;
+        // props of list comes here
 
         return (
             <div className="list">
-                <BaseTable striped bordered condensed hover className="users-list">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Family Name</th>
-                            <th>Age</th>
-                            <th>Manage</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {list.map((member, index) => {
-                            return (
-                                <tr key={index}>
-                                    <td>{member.get('name')}</td>
-                                    <td>{member.get('family_name')}</td>
-                                    <td>{member.get('age')}</td>
-                                    <td><a href="#" onClick={() => onRemove(index)}>Delete</a></td>
-                                </tr>
-                            );
-                        })}
-                    </tbody>
-                </BaseTable>
+                {
+                    // print list goes here
+                }
             </div>
         )
     }
