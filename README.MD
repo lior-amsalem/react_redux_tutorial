@@ -2,7 +2,7 @@
 Welcome to my react/redux tutorial.
 
 ### Get Started
-1. Clone the project: `git clone XXX`.
+1. Clone the project: `git clone git@github.com:lior-a/react_redux_tutorial.git`.
 2. Inside the project folder run `npm install`.
 2. Run `npm run start`.
 3. Go to: `http://localhost:3334`
