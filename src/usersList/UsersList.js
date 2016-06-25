@@ -1,5 +1,5 @@
 import './UsersList.scss';
-import BaseTable from 'react-bootstrap/lib/Table';
+import BaseTable from 'react-bootstrap/lib/Table'; // we extract Table only! not all react-bootstrap
 
 class List extends React.Component {
     /**
@@ -25,6 +25,7 @@ class List extends React.Component {
                     <thead>
                         <tr>
                             <th>Name</th>
+                            <th>Family Name</th>
                             <th>Age</th>
                         </tr>
                     </thead>
@@ -33,6 +34,7 @@ class List extends React.Component {
                             return (
                                 <tr key={index}>
                                     <td>{member.get('name')}</td>
+                                    <td>{member.get('family_name')}</td>
                                     <td>{member.get('age')}</td>
                                 </tr>
                             );

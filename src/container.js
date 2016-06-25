@@ -10,8 +10,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        onAdd: (name, age) => {
-            dispatch(add(name, age));
+        onAdd: (name, family_name, age) => {
+            dispatch(add(name, family_name, age));
         }
     }
 }
