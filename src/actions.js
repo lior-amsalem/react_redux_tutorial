@@ -5,10 +5,17 @@ import * as constants from './constants';
  * - Most of the time the action is exposed from the container
  */
 export function add(name, family_name, age) {
-	return {
-		type: constants.ADD,
-		name: name,
-		family_name: family_name,
-		age: age
-	}
+    return {
+        type: constants.ADD,
+        name: name,
+        family_name: family_name,
+        age: age
+    }
+}
+
+export function remove(index) {
+    return {
+        type: constants.REMOVE,
+        index: index
+    }
 }
