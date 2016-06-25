@@ -1,32 +1,22 @@
 import UsersList from './usersList/UsersList';
-import UserForm from './userForm/UserForm';
+// import UserForm from './userForm/UserForm';
 
 class Users extends React.Component {
 
     constructor() {
         super();
 
-        this.state = {
-            userFormMode: 'hidden'
-        };
+        // set initial state of 'userFormMode'
     }
 
-    changeUserFormMode(mode) {
-        this.setState({
-            userFormMode: 'add'
-        });
-    }
+    // create handle function for the 'add' link
 
     render() {
 
-        const {
-            userFormMode
-        } = this.state;
+        // add this.state 'userFormMode'
 
         const {
-            users,
-            onAdd,
-            onRemove
+            users
         } = this.props;
 
         /**
@@ -37,14 +27,16 @@ class Users extends React.Component {
                 <hgroup>
                     <h2>
                         Members
-                        <small>{userFormMode === 'hidden' && <a href="#" onClick={this.changeUserFormMode.bind(this,'add')}>Add User</a>}</small>
+                        {
+                            // output add 'add' link here
+                        }
                     </h2>
                 </hgroup>
 
-                <UserForm onAdd={onAdd} userFormMode={userFormMode}/>
-
-                <UsersList list={users.get('list')}
-                    onRemove={onRemove}/>
+                {
+                    // output add form component here
+                }
+                <UsersList list={users.get('list')}/>
             </div>
         )
     }
