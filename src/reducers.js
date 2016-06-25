@@ -3,7 +3,7 @@ import users from './stub';
 
 const initialState = Immutable.fromJS({users});
 
-export default function(state = initialState, action = '') {
+export default function(state = initialState, action = {}) {
 
     switch(action.type) {
         case constants.ADD:
