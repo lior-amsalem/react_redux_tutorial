@@ -28,3 +28,13 @@ Welcome to my react/redux tutorial.
 - Pagination - divide the table into smaller portion of data.
 
 The best way to do any of those features is to look for tutorials or follow the current code and modify it to fit with the new feature.
+
+### Screen Shots
+![alt tag](screenshot-1.jpg)
+
+When user click "Add User":
+![alt tag](screenshot-2.jpg)
+
+### Files Structure
+![alt tag](files.jpg)
+

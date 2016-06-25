@@ -7,9 +7,21 @@ const stub = {
             email: 'lior.a@fiverr.com'
         },
         {
-            name: 'Shay',
-            family_name: 'Shay',
-            age: 99,
+            name: 'Lucky',
+            family_name: 'Luke',
+            age: 70,
+            email: 'idont@know.com'
+        },
+        {
+            name: 'Rick',
+            family_name: 'Sanchez',
+            age: 60,
+            email: 'idont@know.com'
+        },
+        {
+            name: 'Heisenberg',
+            family_name: '-',
+            age: 50,
             email: 'idont@know.com'
         }
     ]
