@@ -1,1 +1,1 @@
-export const INITIAL_DATA = 'users/initial_data';
+export const ADD = 'users/add';

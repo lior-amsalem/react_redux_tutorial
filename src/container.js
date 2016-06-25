@@ -1,5 +1,5 @@
 import * as constants from './constants';
-import {initialData} from './actions';
+import { add } from './actions';
 import Users from './Users';
 
 const mapStateToProps = (state) => {
@@ -10,8 +10,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        onInitialData: () => {
-            dispatch(initialData());
+        onAdd: (name, age) => {
+            dispatch(add(name, age));
         }
     }
 }

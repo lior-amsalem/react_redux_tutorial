@@ -5,8 +5,9 @@ body {
 }
 
 /* global style for our team */
-.team-wrapper {
-	width: 969px;
-	background-color: $bg_white;
-
+h2 {
+	small {
+		font-size: 12px;
+		margin-left: 5px;
+	}
 }

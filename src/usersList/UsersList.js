@@ -6,8 +6,8 @@ class List extends React.Component {
      * - Constructor is initialize the first time we call component.
      * - Can contain inital state of our component (with setState).
      */
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
     }
 
     /**
@@ -21,10 +21,6 @@ class List extends React.Component {
 
         return (
             <div className="list">
-                <hgroup>
-                    <h2>Members</h2>
-                </hgroup>
-
                 <BaseTable striped bordered condensed hover className="users-list">
                     <thead>
                         <tr>

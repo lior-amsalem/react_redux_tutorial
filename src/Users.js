@@ -1,22 +1,51 @@
-import UsersList from "./usersList/UsersList";
+import UsersList from './usersList/UsersList';
+import UserForm from './userForm/UserForm';
 
 class Users extends React.Component {
 
-	render() {
+    constructor() {
+        super();
 
-		const {
-			users
-		} = this.props;
+        this.state = {
+            userFormMode: 'hidden'
+        };
+    }
 
-		/**
-		 * Load users components
-		 */
-		return (
-			<div>
-				<UsersList list={users.get('list')}/>
-			</div>
-		)
-	}
+    changeUserFormMode(mode) {
+        this.setState({
+            userFormMode: 'add'
+        });
+    }
+
+    render() {
+
+        const {
+            userFormMode
+        } = this.state;
+
+        const {
+            users,
+            onAdd
+        } = this.props;
+
+        /**
+         * Load users related components
+         */
+        return (
+            <div>
+                <hgroup>
+                    <h2>
+                        Members
+                        <small>{userFormMode === 'hidden' && <a href="#" onClick={this.changeUserFormMode.bind(this,'add')}>Add User</a>}</small>
+                    </h2>
+                </hgroup>
+
+                <UserForm onAdd={onAdd} userFormMode={userFormMode}/>
+
+                <UsersList list={users.get('list')}/>
+            </div>
+        )
+    }
 }
 
 export default Users;
