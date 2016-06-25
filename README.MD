@@ -22,6 +22,7 @@ Welcome to my react/redux tutorial.
 - Add more info to the data/stub/form/table (Example: email, permission, title, created at etc..).
 - Add "Table is empty." msg if there are no users.
 - Add edit feature.
+- Add validation, don't allow empty fileds for example.
 - Filters! once user click on "Name" in the table - fitler the result by alphabetical order.
 - Work with firebase(reactfire) and kill that stupid stub! (on top of onAdd, do ajax request, and remove the stub file for a request from firebase)
 - Pagination - divide the table into smaller portion of data.
