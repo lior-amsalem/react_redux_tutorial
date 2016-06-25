@@ -11,7 +11,7 @@ Welcome to my react/redux tutorial.
 
 - step 1: print all users from stub (files: UsersList.js, Users.js)
 
-- step 2: add form, add new user (name + age inputs)
+- step 2: add form, add new user (name + age inputs - files: userForm.js, usersList.js, container.js, actions.js, reducers.js)
 
 - step 3: add family name (files: userForm.js, usersList.js, container.js, actions.js, reducers.js)
 
