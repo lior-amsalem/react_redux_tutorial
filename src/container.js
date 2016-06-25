@@ -1,5 +1,5 @@
 import * as constants from './constants';
-import { add, remove } from './actions';
+import { add } from './actions';
 import Users from './Users';
 
 const mapStateToProps = (state) => {
@@ -10,11 +10,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        onAdd: (name, family_name, age) => {
-            dispatch(add(name, family_name, age));
-        },
-        onRemove: (index) => {
-            dispatch(remove(index));
+        onAdd: (name, age) => {
+            dispatch(add(name, age));
         }
     }
 }

@@ -16,8 +16,7 @@ class List extends React.Component {
      */
     render() {
         const {
-            list,
-            onRemove
+            list
         } = this.props;
 
         return (
@@ -26,9 +25,7 @@ class List extends React.Component {
                     <thead>
                         <tr>
                             <th>Name</th>
-                            <th>Family Name</th>
                             <th>Age</th>
-                            <th>Manage</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -36,9 +33,7 @@ class List extends React.Component {
                             return (
                                 <tr key={index}>
                                     <td>{member.get('name')}</td>
-                                    <td>{member.get('family_name')}</td>
                                     <td>{member.get('age')}</td>
-                                    <td><a href="#" onClick={() => onRemove(index)}>Delete</a></td>
                                 </tr>
                             );
                         })}
