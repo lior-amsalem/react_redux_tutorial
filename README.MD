@@ -9,7 +9,7 @@ Welcome to my react/redux tutorial.
 
 ### Plan
 
-- step 1: print all users from stub
+- step 1: print all users from stub (files: UsersList.js, Users.js)
 
 - step 2: add form, add new user (name + age inputs)
 
