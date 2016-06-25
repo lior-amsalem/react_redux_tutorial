@@ -12,11 +12,7 @@ export default function(state = initialState, action = {}) {
             state = state.updateIn(['users', 'list'], arr => arr.push(newUser));
 
             return state;
-        case constants.REMOVE:
-
-            state = state.deleteIn(['users', 'list', action.index])
-
-            return state;
+            // add here 'remove'
         default:
             return state;
     }

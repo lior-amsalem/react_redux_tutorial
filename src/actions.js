@@ -13,9 +13,4 @@ export function add(name, family_name, age) {
     }
 }
 
-export function remove(index) {
-    return {
-        type: constants.REMOVE,
-        index: index
-    }
-}
+// export remove action here

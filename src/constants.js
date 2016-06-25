@@ -1,2 +1,2 @@
 export const ADD = 'users/add';
-export const REMOVE = 'users/remove';
+// export remove const here

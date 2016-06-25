@@ -25,8 +25,7 @@ class Users extends React.Component {
 
         const {
             users,
-            onAdd,
-            onRemove
+            onAdd
         } = this.props;
 
         /**
@@ -43,8 +42,7 @@ class Users extends React.Component {
 
                 <UserForm onAdd={onAdd} userFormMode={userFormMode}/>
 
-                <UsersList list={users.get('list')}
-                    onRemove={onRemove}/>
+                <UsersList list={users.get('list')}/>
             </div>
         )
     }
